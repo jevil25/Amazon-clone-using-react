@@ -1,7 +1,12 @@
 import React from 'react';
 import './CheckoutProduct.css';
 
-function CheckoutProduct(id,title,price,rating,image) {
+function CheckoutProduct({id,title,price,rating,image}) {
+  // console.log(props.title);
+  // console.log(price);
+  // console.log(rating);
+  // console.log(image);
+
   return (
     <div className='checkoutProduct'>
         <img className="checkoutProduct__image" src={image} alt="" />
@@ -11,7 +16,7 @@ function CheckoutProduct(id,title,price,rating,image) {
                 <small>$</small>
                 <strong>{price}</strong>
             </p>
-            <div className='chechoutProduct__rating'>
+            <div className='checkoutProduct__rating'>
             {Array(rating).fill().map(()=>(
                     <p>⭐</p>
                 ))}
