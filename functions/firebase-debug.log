@@ -1,0 +1,265 @@
+[debug] [2022-12-24T12:15:35.730Z] ----------------------------------------------------------------------
+[debug] [2022-12-24T12:15:35.735Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aaron\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-12-24T12:15:35.737Z] CLI Version:   11.19.0
+[debug] [2022-12-24T12:15:35.737Z] Platform:      win32
+[debug] [2022-12-24T12:15:35.737Z] Node Version:  v16.17.0
+[debug] [2022-12-24T12:15:35.755Z] Time:          Sat Dec 24 2022 17:45:35 GMT+0530 (India Standard Time)
+[debug] [2022-12-24T12:15:35.755Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-24T12:15:36.213Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-24T12:15:36.214Z] > authorizing via signed-in user (jevil257@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2022-12-24T12:15:36.259Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-24T12:15:36.261Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-24T12:15:36.262Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-12-24T12:15:36.359Z] [hub] writing locator at C:\Users\Aaron\AppData\Local\Temp\hub-clone-d484f.json
+[debug] [2022-12-24T12:15:36.526Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-24T12:15:36.527Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-24T12:15:36.528Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-12-24T12:15:36.921Z] defaultcredentials: writing to file C:\Users\Aaron\AppData\Roaming\firebase\jevil257_gmail_com_application_default_credentials.json
+[debug] [2022-12-24T12:15:37.003Z] Setting GAC to C:\Users\Aaron\AppData\Roaming\firebase\jevil257_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Aaron\\AppData\\Roaming\\firebase\\jevil257_gmail_com_application_default_credentials.json"}}
+[debug] [2022-12-24T12:15:37.030Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-d484f/adminSdkConfig [none]
+[debug] [2022-12-24T12:15:37.652Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-d484f/adminSdkConfig 200
+[debug] [2022-12-24T12:15:37.653Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-d484f/adminSdkConfig {"projectId":"clone-d484f","storageBucket":"clone-d484f.appspot.com"}
+[debug] [2022-12-24T12:15:37.690Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-d484f/sites 
+[debug] [2022-12-24T12:15:39.284Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-d484f/sites 200
+[debug] [2022-12-24T12:15:39.285Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-d484f/sites {"sites":[{"name":"projects/clone-d484f/sites/clone-d484f","defaultUrl":"https://clone-d484f.web.app","appId":"1:992526128738:web:576f1d1374f6dcef39e33b","type":"DEFAULT_SITE"}]}
+[debug] [2022-12-24T12:15:39.285Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-d484f/webApps/1:992526128738:web:576f1d1374f6dcef39e33b/config [none]
+[debug] [2022-12-24T12:15:40.713Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-d484f/webApps/1:992526128738:web:576f1d1374f6dcef39e33b/config 200
+[debug] [2022-12-24T12:15:40.714Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-d484f/webApps/1:992526128738:web:576f1d1374f6dcef39e33b/config {"projectId":"clone-d484f","appId":"1:992526128738:web:576f1d1374f6dcef39e33b","storageBucket":"clone-d484f.appspot.com","apiKey":"AIzaSyD3bWGU4R9iWEnP6zytFsnKNDP6WdxS4Tw","authDomain":"clone-d484f.firebaseapp.com","messagingSenderId":"992526128738","measurementId":"G-KE26KMFZL5"}
+[debug] [2022-12-24T12:15:40.728Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-d484f [none]
+[debug] [2022-12-24T12:15:41.345Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-d484f 200
+[debug] [2022-12-24T12:15:41.345Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-d484f {"projectId":"clone-d484f","projectNumber":"992526128738","displayName":"amazon-clone","name":"projects/clone-d484f","resources":{"hostingSite":"clone-d484f"},"state":"ACTIVE","etag":"1_40a05664-3350-4440-aadd-b4b8a54c7f4d"}
+[info] i  hosting[clone-d484f]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[clone-d484f]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[info] i  ui: downloading ui-v1.11.1.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.1.zip..."}}
+[debug] [2022-12-24T12:15:41.466Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.1.zip 
+[debug] [2022-12-24T12:15:41.963Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.1.zip 200
+[debug] [2022-12-24T12:15:41.963Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.1.zip [stream]
+[debug] [2022-12-24T12:15:51.437Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-12-24T12:15:51.438Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-12-24T12:15:51.438Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Aaron\\.cache\\firebase\\emulators\\ui-v1.11.1\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Aaron\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.1\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-12-24T12:15:52.402Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2022-12-24T12:15:52.403Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\Aaron\OneDrive\Desktop\github\A-react-project-Amazon-clone\Amazon-clone-using-react\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Aaron\\OneDrive\\Desktop\\github\\A-react-project-Amazon-clone\\Amazon-clone-using-react\\functions\" for Cloud Functions..."}}
+[debug] [2022-12-24T12:15:52.624Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-24T12:15:58.770Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-12-24T12:15:58.771Z] Building nodejs source
+[debug] [2022-12-24T12:15:58.782Z] Could not find functions.yaml. Must use http discovery
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:16:02 +0000] "GET /%PUBLIC_URL%/manifest.json HTTP/1.1" 500 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:16:02 +0000] \"GET /%PUBLIC_URL%/manifest.json HTTP/1.1\" 500 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:16:02 +0000] "GET /%PUBLIC_URL%/favicon.ico HTTP/1.1" 500 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:16:02 +0000] \"GET /%PUBLIC_URL%/favicon.ico HTTP/1.1\" 500 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[debug] [2022-12-24T12:16:03.000Z] Serving at port 9005
+
+[debug] [2022-12-24T12:16:04.016Z] Got response from /__/functions.yaml Failed to generate manifest from function source: ReferenceError: trur is not defined
+[debug] [2022-12-24T12:16:04.029Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:
+     ...  function source: ReferenceError: trur is not defined
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: ReferenceError: trur is not defined\n\u0000","position":64,"line":0,"column":64},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:\n     ...  function source: ReferenceError: trur is not defined\n                                         ^"}
+[debug] [2022-12-24T12:16:04.037Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: trur is not defined {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: trur is not defined"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:16:19 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:16:19 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:16:20 +0000] "GET /static/css/main.17a978d2.chunk.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:16:20 +0000] \"GET /static/css/main.17a978d2.chunk.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:16:20 +0000] "GET /static/js/main.8452205b.chunk.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:16:20 +0000] \"GET /static/js/main.8452205b.chunk.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:16:20 +0000] "GET /static/js/2.6dac9817.chunk.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:16:20 +0000] \"GET /static/js/2.6dac9817.chunk.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:16:21 +0000] "GET /manifest.json HTTP/1.1" 200 492 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:16:21 +0000] \"GET /manifest.json HTTP/1.1\" 200 492 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:16:21 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:16:21 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:16:21 +0000] "GET /logo192.png HTTP/1.1" 200 5347 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:16:21 +0000] \"GET /logo192.png HTTP/1.1\" 200 5347 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[debug] [2022-12-24T12:28:46.264Z] File C:\Users\Aaron\OneDrive\Desktop\github\A-react-project-Amazon-clone\Amazon-clone-using-react\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Aaron\\OneDrive\\Desktop\\github\\A-react-project-Amazon-clone\\Amazon-clone-using-react\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-12-24T12:28:47.336Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-24T12:28:51.539Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-12-24T12:28:51.540Z] Building nodejs source
+[debug] [2022-12-24T12:28:51.546Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-24T12:28:52.284Z] Serving at port 9005
+
+[debug] [2022-12-24T12:28:52.733Z] Got response from /__/functions.yaml Failed to generate manifest from function source: ReferenceError: trur is not defined
+[debug] [2022-12-24T12:28:52.736Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:
+     ...  function source: ReferenceError: trur is not defined
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: ReferenceError: trur is not defined\n\u0000","position":64,"line":0,"column":64},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:\n     ...  function source: ReferenceError: trur is not defined\n                                         ^"}
+[debug] [2022-12-24T12:28:52.765Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: trur is not defined {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: trur is not defined"}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:28:55 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:28:55 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:29:01 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:29:01 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:29:02 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:29:02 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:29:03 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:29:03 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:29:03 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:29:03 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:29:03 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:29:03 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:29:04 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:29:04 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:29:04 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:29:04 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:29:04 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:29:04 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:29:05 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:29:05 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:29:05 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:29:05 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[debug] [2022-12-24T12:29:13.705Z] File C:\Users\Aaron\OneDrive\Desktop\github\A-react-project-Amazon-clone\Amazon-clone-using-react\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Aaron\\OneDrive\\Desktop\\github\\A-react-project-Amazon-clone\\Amazon-clone-using-react\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-12-24T12:29:14.716Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-24T12:29:18.796Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-12-24T12:29:18.797Z] Building nodejs source
+[debug] [2022-12-24T12:29:18.803Z] Could not find functions.yaml. Must use http discovery
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:29:18 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:29:18 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[debug] [2022-12-24T12:29:19.653Z] Serving at port 9005
+
+[debug] [2022-12-24T12:29:20.047Z] Got response from /__/functions.yaml Failed to generate manifest from function source: ReferenceError: trur is not defined
+[debug] [2022-12-24T12:29:20.047Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:
+     ...  function source: ReferenceError: trur is not defined
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: ReferenceError: trur is not defined\n\u0000","position":64,"line":0,"column":64},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:\n     ...  function source: ReferenceError: trur is not defined\n                                         ^"}
+[debug] [2022-12-24T12:29:20.056Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: trur is not defined {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: trur is not defined"}}
+[debug] [2022-12-24T12:29:24.482Z] File C:\Users\Aaron\OneDrive\Desktop\github\A-react-project-Amazon-clone\Amazon-clone-using-react\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Aaron\\OneDrive\\Desktop\\github\\A-react-project-Amazon-clone\\Amazon-clone-using-react\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-12-24T12:29:25.490Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-24T12:29:28.618Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-12-24T12:29:28.618Z] Building nodejs source
+[debug] [2022-12-24T12:29:28.619Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-24T12:29:29.252Z] Serving at port 9005
+
+[debug] [2022-12-24T12:29:29.559Z] Got response from /__/functions.yaml Failed to generate manifest from function source: ReferenceError: trur is not defined
+[debug] [2022-12-24T12:29:29.559Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:
+     ...  function source: ReferenceError: trur is not defined
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: ReferenceError: trur is not defined\n\u0000","position":64,"line":0,"column":64},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:\n     ...  function source: ReferenceError: trur is not defined\n                                         ^"}
+[debug] [2022-12-24T12:29:29.564Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: trur is not defined {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: trur is not defined"}}
+[info] i  hosting: 127.0.0.1 - - [24/Dec/2022:12:29:38 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [24/Dec/2022:12:29:38 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[debug] [2022-12-24T12:29:47.826Z] File C:\Users\Aaron\OneDrive\Desktop\github\A-react-project-Amazon-clone\Amazon-clone-using-react\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Aaron\\OneDrive\\Desktop\\github\\A-react-project-Amazon-clone\\Amazon-clone-using-react\\functions\\index.js changed, reloading triggers"}}

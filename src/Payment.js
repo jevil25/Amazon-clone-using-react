@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Payment.css';
 import CheckoutProduct from './CheckoutProduct';
 import { useStateValue } from './StateProvider';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { CardElement, useElements,useStripe } from '@stripe/react-stripe-js';
 import CurrencyFormat from 'react-currency-format';
 import { getBasketTotal } from './Reducer';
-
+import axios from './axios';
 
 function Payment() {
+    const navigate = useNavigate();
     const [{basket,user},dispatch]=useStateValue();
 
     const stripe = useStripe();
@@ -17,9 +18,39 @@ function Payment() {
     const {error, setError} = useState(null);
     const {processing, setProcessing} = useState("");
     const {succeeded, setSucceeded} = useState(false);
-    const {disabled, setDisabled} = useState(null);
+    const {clientSecret, setClientSecret} = useState(null);
 
-    function handleSubmit(e){
+    useEffect(() => {
+        //used to update amount to stripe when user adds or deletes product
+        async function getClientSecret(){
+            const response=await axios({
+                method: 'post',
+                //Stripe expects the total in a currencies subunits
+                url: `/payment/create?total=${getBasketTotal(basket)*100}`
+            });
+            setClientSecret(response.data.clientSecret);
+        }
+
+        getClientSecret();
+    }, {basket})
+
+    async function handleSubmit(e){
+        e.preventDefault();
+        setProcessing(true);
+
+        const payload = await stripe.confirmCardPayment(clientSecret, {
+            payment_method: {
+                card: Elements.getElement(CardElement)
+            }
+        }).then(({ paymentIntent }) => {
+            //paymentIntent is payment confirmation
+
+            setSucceeded(true);
+            setError(null);
+            setProcessing(false);
+
+            navigate('/orders');
+        })
 
     }
 
@@ -27,7 +58,7 @@ function Payment() {
 
     function handleChange(e){
         //displays error while entering card details
-        setDisabled(e.empty);
+        setClientSecret(e.empty);
         setError(e.error ? e.error.message : "");
     }
 
@@ -87,7 +118,7 @@ function Payment() {
                                 thousandSeparator={true}
                                 prefix={"$"}
                                 />
-                                <button disabled={processing || disabled || succeeded}>
+                                <button disabled={processing || clientSecret || succeeded}>
                                     <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
                                 </button>
                             </div>
