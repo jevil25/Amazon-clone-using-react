@@ -15,11 +15,14 @@ function Payment() {
     const Elements = useElements();
 
     const {error, setError} = useState(null);
+    const {processing, setProcessing} = useState("");
+    const {succeeded, setSucceeded} = useState(false);
     const {disabled, setDisabled} = useState(null);
 
     function handleSubmit(e){
 
     }
+
 
 
     function handleChange(e){
@@ -84,7 +87,12 @@ function Payment() {
                                 thousandSeparator={true}
                                 prefix={"$"}
                                 />
+                                <button disabled={processing || disabled || succeeded}>
+                                    <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
+                                </button>
                             </div>
+
+                            {error && <div>{error}</div>}
                         </form>
                 </div>
             </div>
