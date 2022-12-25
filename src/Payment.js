@@ -15,10 +15,11 @@ function Payment() {
     const stripe = useStripe();
     const Elements = useElements();
 
-    const {error, setError} = useState(null);
-    const {processing, setProcessing} = useState("");
-    const {succeeded, setSucceeded} = useState(false);
-    const {clientSecret, setClientSecret} = useState(null);
+    const [error, setError] = useState(null);
+    const [processing, setProcessing] = useState("");
+    const [succeeded, setSucceeded] = useState(false);
+    const [clientSecret, setClientSecret] = useState(true);
+    const [disabled, setDisabled] = useState(true);
 
     useEffect(() => {
         //used to update amount to stripe when user adds or deletes product
@@ -28,6 +29,7 @@ function Payment() {
                 //Stripe expects the total in a currencies subunits
                 url: `/payment/create?total=${getBasketTotal(basket)*100}`
             });
+            // console.log(response)
             setClientSecret(response.data.clientSecret);
         }
 
@@ -59,7 +61,7 @@ function Payment() {
 
     function handleChange(e){
         //displays error while entering card details
-        setClientSecret(e.empty);
+        setDisabled(e.empty);
         setError(e.error ? e.error.message : "");
     }
 
@@ -119,7 +121,7 @@ function Payment() {
                                 thousandSeparator={true}
                                 prefix={"$"}
                                 />
-                                <button disabled={processing || clientSecret || succeeded}>
+                                <button disabled={processing || disabled || succeeded}>
                                     <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
                                 </button>
                             </div>
