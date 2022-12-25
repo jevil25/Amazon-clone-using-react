@@ -4,6 +4,7 @@ import "./Login.css";
 import { auth } from "./firebase";
 
 function Login() {
+    console.log("this is login.js");
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

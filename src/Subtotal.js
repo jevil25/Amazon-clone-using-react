@@ -6,6 +6,7 @@ import { getBasketTotal } from './Reducer';
 import { useNavigate } from 'react-router-dom';
 
 function Subtotal() {
+  console.log("this is subtotal.js");
   const navigate = useNavigate();
   const initialvalue=0;
   const [{ basket }, dispatch] = useStateValue();

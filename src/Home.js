@@ -3,6 +3,7 @@ import "./home.css";
 import Product from './Product';
 
 function Home() {
+  console.log("this is header.js");
   return (
     <div className="home">
       <div className="home__container">

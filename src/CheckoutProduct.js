@@ -19,6 +19,8 @@ function CheckoutProduct({id,title,price,rating,image}) {
       })
   }
 
+  console.log("this is checkoutProduct.js");
+
   return (
     <div className='checkoutProduct'>
         <img className="checkoutProduct__image" src={image} alt="" />
