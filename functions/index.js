@@ -30,9 +30,24 @@ app.post('/payment/create', async(req,res) => {
 
     console.log('Payment Request Received BOOM!! for this amount >>> ',total);
     const paymentIntent=await stripe.paymentIntents.create({
-        amount:total,
-        currency: "usd"
+        description: 'Software development services',
+        shipping: {
+            name: 'Jenny Rosen',
+            address: {
+            line1: '510 Townsend St',
+            postal_code: '98140',
+            city: 'San Francisco',
+            state: 'CA',
+            country: 'US',
+            },
+        },
+        amount: total,
+        currency: 'usd',
+        description: 'One-time setup fee',
+        payment_method_types: ['card']
     });
+
+    // console.log(paymentIntent)
 
     res.status(200).send({
         clientSecret: paymentIntent.client_secret
