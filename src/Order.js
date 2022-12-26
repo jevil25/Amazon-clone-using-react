@@ -19,6 +19,7 @@ function order({ order }) {
         price={item.price}
         rating={item.rating}
         image={item.image}
+        hidebutton
       />
       ))}
     </div>
